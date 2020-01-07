@@ -14,6 +14,6 @@ end
 
 def find_min_value(array)
   array.min_by do |index|
-    return index.field
+    array[index]
   end 
 end
