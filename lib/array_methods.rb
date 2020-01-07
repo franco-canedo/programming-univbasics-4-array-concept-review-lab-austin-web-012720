@@ -13,8 +13,6 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  array.min_by do |index|
-    array[index]
-  end 
-  return array[index]
+  new_array = array.sort
+  return new_array.first
 end
